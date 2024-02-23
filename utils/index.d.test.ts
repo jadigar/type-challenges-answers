@@ -1,6 +1,8 @@
-import type { Alike, Equal, Expect, ExpectFalse, IsAny, NotEqual } from './index'
+import type {
+  Alike, Equal, Expect, ExpectFalse, IsAny, NotEqual,
+} from './index';
 
-type cases = [
+type Cases = [
   /* Expect */
   Expect<true>,
   // @ts-expect-error
@@ -32,4 +34,4 @@ type cases = [
   /* Alike */
   Expect<Alike<{ a: 1 } & { b: 2 }, { a: 1, b: 2 }>>,
   ExpectFalse<Equal<{ a: 1 } & { b: 2 }, { a: 1, b: 2 }>>,
-]
+];

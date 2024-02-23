@@ -1,0 +1,31 @@
+{
+	"$schema": "https://json.schemastore.org/eslintrc",
+	"env": {
+		"node": true
+	},
+	"extends": [
+		"eslint:all",
+		"airbnb-base",
+		"airbnb-typescript/base",
+		"plugin:@typescript-eslint/all"
+	],
+	"parser": "@typescript-eslint/parser",
+	"parserOptions": {
+		"project": true,
+		"tsconfigRootDir": "./tsconfig.json"
+	},
+	"plugins": [
+		"@typescript-eslint",
+		"eslint-plugin-tsdoc"
+	],
+	"rules": {
+		"@typescript-eslint/no-magic-numbers": "off",
+		"no-magic-numbers": "off",
+		"max-len": "off",
+		"@typescript-eslint/prefer-readonly-parameter-types": "off",
+		"@typescript-eslint/no-unused-vars": "off",
+		"@typescript-eslint/no-explicit-any": "off",
+		"@typescript-eslint/ban-ts-comment":"off"
+	},
+	"root": true
+}

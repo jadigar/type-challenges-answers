@@ -43,7 +43,7 @@ Provide some test cases for your challenge, you can use some utils from `@type-c
 import type { Equal, Expect } from '@type-challenges/utils'
 import { ExpectFalse, NotEqual } from '@type-challenges/utils'
 
-type cases = [
+type Cases = [
   Expect<Equal<true, true>>
 ]
 ```

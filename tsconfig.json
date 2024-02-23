@@ -1,6 +1,25 @@
 {
-  "extends": "./tsconfig.base.json",
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "Node Next",
   "compilerOptions": {
-    "module": "commonjs"
-  }
+    "target": "ES2022",
+    "module": "NodeNext",
+    "lib": [
+      "ES2022",
+      "ESNext"
+    ],
+    "outDir": "./dist",
+    "types": [
+      "jest",
+      "node"
+    ],
+    "strict": true,
+    "moduleResolution": "NodeNext",
+  },
+  "include": [
+    "questions/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }
